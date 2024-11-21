@@ -4,7 +4,8 @@ import Container from "../shares/Container/Container";
 
 const CardanoHero = () => {
     return (
-        <section>
+        <section className="relative">
+            <img className="absolute right-0 bottom-4 md:bottom-10 lg:bottom-24 w-56 md:w-[230px] lg:w-[294px]" src="/img/Ellipse 1.png" alt="" />
             <Container>
                 <div className="flex flex-col md:flex-row justify-between items-center gap-10 py-10 md:py-16 lg:py-32">
                     {/* content */}
@@ -14,7 +15,7 @@ const CardanoHero = () => {
                         <Button label="Get Started" rightIcon={<i className='bx bx-right-arrow-alt'></i>} className="font-mplus transition duration-150 text-white bg-[#772AB3] rounded-full text-base font-normal" />
                     </div>
                     {/* img */}
-                    <div>
+                    <div className="z-10">
                         <img src="/img/credit-card.png" alt="" />
                     </div>
                 </div>

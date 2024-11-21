@@ -1,11 +1,9 @@
-import Container from "../../components/shares/Container/Container";
+import CardanoHero from "../../components/CardanoHero/CardanoHero";
 
 const Home = () => {
     return (
         <section>
-            <Container>
-                <h1>This is Home pages</h1> 
-            </Container>
+            <CardanoHero />
         </section>
     );
 };

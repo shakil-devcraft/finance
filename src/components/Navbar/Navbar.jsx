@@ -2,9 +2,10 @@
 import PropTypes from "prop-types";
 import Button from "../shares/Button/Button";
 import Container from "../shares/Container/Container";
+import { Link } from "react-router-dom";
 
 const Navbar = ({
-  brand = "img/logo.png",
+  brand = "/img/logo.png",
   brandClass = "text-2xl font-bold text-white",
 }) => {
 
@@ -13,7 +14,7 @@ const Navbar = ({
       <Container>
         <div className="py-2 flex items-center justify-between">
             {/* Brand */}
-            <div className={brandClass}><img className="w-[200px]" src={brand} alt="" /></div>
+            <Link><div className={brandClass}><img className="w-[200px]" src={brand} alt="" /></div></Link>
 
             {/* button */}
             <Button label="Contact" className="font-mplus hover:text-white hover:border-white transition duration-150 text-[#772AB3] bg-transparent px-8 py-2 md:py-3 border-2 border-[#772AB3] rounded-full text-base font-normal" />

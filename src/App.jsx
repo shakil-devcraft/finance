@@ -7,11 +7,13 @@ import Footer from './components/Footer/Footer';
 function App() {
 
   return (
-    <div className='bg-black font-mplus'>
+    <div className='bg-black font-mplus bg-[url(img/dora_wrap.png)] bg-cover object-cover text-[#772AB3]'>
       {/* navbar */}
       <Navbar />
       {/* outlet */}
-      <Outlet />
+      <div className='min-h-[calc(100vh-85px)]'>
+        <Outlet />
+      </div>
       {/* footer */}
       <Footer />
     </div>

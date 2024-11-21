@@ -1,9 +1,12 @@
+import Container from "../../components/shares/Container/Container";
 
 const Home = () => {
     return (
-        <div>
-            <h1>This is Home pages</h1>
-        </div>
+        <section>
+            <Container>
+                <h1>This is Home pages</h1> 
+            </Container>
+        </section>
     );
 };
 

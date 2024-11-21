@@ -17,7 +17,7 @@ const Navbar = ({
             <Link><div className={brandClass}><img className="w-[200px]" src={brand} alt="" /></div></Link>
 
             {/* button */}
-            <Button label="Contact" className="font-mplus hover:text-white hover:border-white transition duration-150 text-[#772AB3] bg-transparent px-8 py-2 md:py-3 border-2 border-[#772AB3] rounded-full text-base font-normal" />
+            <Button label="Contact" className="font-mplus hover:text-white hover:border-white transition duration-150 text-[#772AB3] bg-transparent border-2 border-[#772AB3] rounded-full text-base font-normal" />
         </div>
       </Container>
     </nav>

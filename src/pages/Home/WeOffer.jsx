@@ -5,7 +5,7 @@ const WeOffer = () => {
     return (
         <section className="py-10 md:py-16 lg:py-32">
             <Container>
-                <h1 className="lg:mb-16 mb-10 text-2xl md:text-3xl lg:text-[40px] leading-[30px] md:leading-[57px] text-center text-white font-bold">What do we offer?</h1>
+                <h1 className="mb-10 text-2xl md:text-3xl lg:text-[40px] leading-[30px] md:leading-[57px] text-center text-white font-bold">What do we offer?</h1>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-5 md:gap-6 lg:gap-8 space-y-8 md:space-y-0">
                     {
                         weOffer?.map(({offerImg, title, description}, offerIdx) => (

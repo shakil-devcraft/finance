@@ -1,4 +1,5 @@
 import CardanoHero from "../../components/CardanoHero/CardanoHero";
+import DebitCard from "./DebitCard";
 import Vision from "./Vision";
 import WeOffer from "./WeOffer";
 
@@ -8,6 +9,7 @@ const Home = () => {
             <CardanoHero />
             <Vision />
             <WeOffer />
+            <DebitCard />
         </section>
     );
 };

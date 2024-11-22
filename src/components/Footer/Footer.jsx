@@ -4,7 +4,7 @@ import Container from "../shares/Container/Container";
 
 const Footer = () => {
     return (
-        <section className="py-12">
+        <section className="py-12 bg-[#2928343D]">
             <Container>
                 <div className="grid grid-cols-1 md:grid-cols-5 lg:grid-cols-6 lg:gap-20 text-[#ADB2B1]">
                     <div className="md:col-span-2 mb-10 md:mb-0">

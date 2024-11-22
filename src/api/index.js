@@ -36,3 +36,29 @@ export const weOffer = [
         description: "Empowering businesses with effortless crypto payments and seamless fiat solutions."
     }
 ];
+
+
+// member data
+export const memberData = [
+    {
+        qIcon: "/img/Frame.png",
+        description: "Great session! Dani was super helpful. She shared some practical advice on how can lorem ip we go about refining our service offerings.",
+        memberImg: "/img/Ellipse.png",
+        memberName: "Hadid Khan",
+        memberPro: "UIUX Designer" 
+    },
+    {
+        qIcon: "/img/Frame.png",
+        description: "It's is both attractive and highly adaptable. It's exactly what I've been looking forefinitely wo lorem ipsum dolorth the investment.",
+        memberImg: "/img/Ellipse (1).png",
+        memberName: "Wade Warren",
+        memberPro: "Web Designer" 
+    },
+    {
+        qIcon: "/img/Frame.png",
+        description: "I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking.",
+        memberImg: "/img/Ellipse (2).png",
+        memberName: "Jenny Wilson",
+        memberPro: "Trust Administrator" 
+    },
+];

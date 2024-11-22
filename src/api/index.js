@@ -1,3 +1,4 @@
+// footer data
 export const footerLinks = [
     {
         heading: "About us",
@@ -14,5 +15,24 @@ export const footerLinks = [
     {
         heading: "Social",
         links: ["Changelog", "License", "Site Maps", "News"]
+    }
+];
+
+// we offer data
+export const weOffer = [
+    {
+        offerImg: "/img/f.png",
+        title: "Cardano Debit-Cards",
+        description: "Cardano, simplified. The debit card that makes crypto spending easy."
+    },
+    {
+        offerImg: "/img/f (1).png",
+        title: "On & Off Ramp",
+        description: "Fiat meets crypto, effortlessly buy, sell, and manage."
+    },
+    {
+        offerImg: "/img/f (2).png",
+        title: "Solutions for business",
+        description: "Empowering businesses with effortless crypto payments and seamless fiat solutions."
     }
 ];

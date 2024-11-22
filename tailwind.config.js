@@ -10,13 +10,8 @@ export default {
         "mplus": ['"M PLUS 1", sans-serif'],
       },
       "colors": {
-        "primary": "#F26922",
-        "b-secondary": "#E4E4E780",
-        "t-primary": "#09090B",
-        "t-secondary": "#71717A"
-      },
-      "backgroundImage": {
-        'map': "url('/map.png')",
+        "purpleStart": "#772AB3",
+        "purpleEnd": "#C753FE"
       }
     },
   },

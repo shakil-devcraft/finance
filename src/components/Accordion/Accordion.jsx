@@ -22,7 +22,7 @@ const Accordion = () => {
                         "shadow-md transition-all")
                     )}
                     >
-                    {/* Accordion Header */}
+                    {/* Accordion header */}
                     <button
                         onClick={() => toggleIndex(index)}
                         className={clsx(
@@ -41,11 +41,13 @@ const Accordion = () => {
                             })
                         )}
                         >
+                        {/* add icon and remove icon */}
                         {activeIndex === index ? <RemoveIcon /> : <AddIcon/>}
                         </span>
                     </button>
 
-                    {/* Accordion Content */}
+                    
+                    {/* Accordion description */}
                     <div
                         className={twMerge(
                         clsx("px-4 py-3 text-sm lg:text-[15px] text-[#ADB2B1] font-normal", {

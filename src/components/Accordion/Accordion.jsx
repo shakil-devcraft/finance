@@ -1,49 +1,65 @@
-// import * as React from 'react';
-import Accordion from '@mui/material/Accordion';
-import AccordionSummary from '@mui/material/AccordionSummary';
-import AccordionDetails from '@mui/material/AccordionDetails';
-import Typography from '@mui/material/Typography';
+import { useState } from "react";
+import clsx from "clsx";
+import { twMerge } from "tailwind-merge";
 import AddIcon from '@mui/icons-material/Add';
+import RemoveIcon from '@mui/icons-material/Remove';
+import { accordionData } from "../../api";
 
-import Container from '../shares/Container/Container';
+const Accordion = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
 
-export default function AccordionExpandDefault() {
+  const toggleIndex = (index) => {
+    setActiveIndex(activeIndex === index ? null : index);
+  };
+
   return (
-    <section>
-        <Container>
-            <div>
-            <Accordion defaultExpanded>
-                <AccordionSummary
-                expandIcon={<AddIcon />}
-                aria-controls="panel1-content"
-                id="panel1-header"
-                >
-                <Typography>Expanded by default</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
-                </AccordionDetails>
-            </Accordion>
-            <Accordion>
-                <AccordionSummary
-                expandIcon={<AddIcon />}
-                aria-controls="panel2-content"
-                id="panel2-header"
-                >
-                <Typography>Header</Typography>
-                </AccordionSummary>
-                <AccordionDetails>
-                <Typography>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                    malesuada lacus ex, sit amet blandit leo lobortis eget.
-                </Typography>
-                </AccordionDetails>
-            </Accordion>
-            </div>
-        </Container>
-    </section>
+        <div className="w-full mx-auto space-y-4">
+            {accordionData?.map((item, index) => (
+                <div
+                    key={index}
+                    className={twMerge(
+                        clsx("text-white overflow-hidden",
+                        "shadow-md transition-all")
+                    )}
+                    >
+                    {/* Accordion Header */}
+                    <button
+                        onClick={() => toggleIndex(index)}
+                        className={clsx(
+                        "w-full flex justify-between items-center px-4 py-3 text-left font-medium border-b-2 border-[#ADB2B1]",
+                        // {
+                        //     "bg-purple-600": activeIndex === index,
+                        //     "bg-gray-700": activeIndex !== index,
+                        // }
+                        )}
+                    >
+                        <h2 className="font-bold text-white text-lg md:text-xl lg:text-2xl">{item?.title}</h2>
+                        <span
+                        className={twMerge(
+                            clsx("transform transition-transform duration-500", {
+                                "rotate-180": activeIndex === index,
+                            })
+                        )}
+                        >
+                        {activeIndex === index ? <RemoveIcon /> : <AddIcon/>}
+                        </span>
+                    </button>
+
+                    {/* Accordion Content */}
+                    <div
+                        className={twMerge(
+                        clsx("px-4 py-3 text-sm lg:text-[15px] text-[#ADB2B1] font-normal", {
+                            hidden: activeIndex !== index,
+                            "block ": activeIndex === index,
+                        })
+                        )}
+                    >
+                        {item?.description}
+                    </div>
+                </div>
+            ))}
+        </div>
   );
-}
+};
+
+export default Accordion;

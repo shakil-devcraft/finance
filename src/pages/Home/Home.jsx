@@ -1,6 +1,6 @@
-import AccordionExpandDefault from "../../components/Accordion/Accordion";
 import CardanoHero from "../../components/CardanoHero/CardanoHero";
 import DebitCard from "./DebitCard";
+import Faqs from "./Faqs";
 import Member from "./Member";
 import PerfectCard from "./PerfectCard";
 import Vision from "./Vision";
@@ -15,7 +15,7 @@ const Home = () => {
             <DebitCard />
             <PerfectCard />
             <Member />
-            <AccordionExpandDefault />
+            <Faqs />
         </section>
     );
 };
